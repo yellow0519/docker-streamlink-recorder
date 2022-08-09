@@ -2,10 +2,10 @@
 
 # Add local user and group
 # Either use the uid and gid if passed in at runtime or
-# fallback to 9001
+# fallback to 100
 
-USER_ID=${uid:-9001}
-GROUP_ID=${gid:-9001}
+USER_ID=${uid:100}
+GROUP_ID=${gid:100}
 
 #addgroup --gid $GROUP_ID mygroup
 #adduser --disabled-password myuser --uid $USER_ID --gecos myuser --ingroup mygroup --shell /bin/sh
