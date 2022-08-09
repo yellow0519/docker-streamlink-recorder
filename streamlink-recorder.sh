@@ -4,6 +4,6 @@
 
 while [ true ]; do
 	Date=$(date +%Y%m%d-%H%M%S)
-	streamlink $streamOptions $streamLink $streamQuality -o /home/download/{title}"-$Date".mkv
+	streamlink $streamOptions $streamLink best -o /home/download/{title}"-$Date".mkv
 	sleep 60s
 done
