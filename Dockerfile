@@ -22,6 +22,7 @@ RUN  echo 'export PATH="${HOME}/.local/bin:${PATH}"'
 RUN mkdir /home/download
 RUN mkdir /home/script
 RUN mkdir /home/plugins
+RUN ln -snf /usr/share/zoneinfo/Asia/Seoul /etc/localtime
 
 COPY ./streamlink-recorder.sh /home/script/
 COPY ./entrypoint.sh /home/script
